@@ -1,4 +1,4 @@
-console.log("app.js funcionando")
+console.log("app.js funcionando");
 
 const API = 'http://localhost:3000/alunos'
 
@@ -23,12 +23,10 @@ async function carregarTabela() {
                 <td>${a.rua} senai</td>
                 <td>${a.numero}</td>
                 <td>${a.complemento}</td>
-                <td>
-                    <button>
-                        <a href="editar.html?id=${a.id}">Editar</a>
-                    </button>
-                    <button>Excluir</button>
-                </td>
+                <td> 
+                <button><a href="editar.html?id=${a.id}">Editar</a>
+                </button> 
+                <button>Excluir</button></td>
             </tr>`
         ).join("");
         // }, 2000) // 5 segundos
@@ -38,6 +36,5 @@ async function carregarTabela() {
     }
 
 }
-
 
 carregarTabela();
