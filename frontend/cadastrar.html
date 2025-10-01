@@ -11,7 +11,7 @@
     <form id="form-aluno">
         <div>
             <label>ID:
-                <input type="number" placehoder="Digite seu id..." name="" id="id">
+                <input type="number" placehoder="Digite seu id..." name="" id="id" readonly>
             </label>
         </div>
         <label for="">Nome*:
@@ -50,9 +50,8 @@
         </div>
 
         <button id="enviar" type="submit">Enviar</button>
-        <button id="editar" type="submit">Editar</button>
-        <button type="button">Limpar</button>
+        <button type="button" onclick=Limpar()>Limpar</button>
     </form>
-    <script>src="app.js"</script>
+    <script src="cadastrar.js"></script>
 </body>
 </html>
